@@ -1,5 +1,6 @@
 .btn {
 	margin: 5px;
+	 font-weight: 300;
 }
 
 .heart {
@@ -8,4 +9,10 @@
 
 #contact p {
 	color: #333;
+}
+
+.edit {
+    margin-top: 10px;
+    display: block;
+    color: lightgray;
 }
