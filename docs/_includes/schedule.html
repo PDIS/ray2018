@@ -2,8 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">專案期程
-                </h2>
+                <h2 class="section-heading">專案期程</h2>
                 <hr class="primary">
                 <section class="timeline">
                     {% for event in site.data.timeline %}
@@ -18,6 +17,9 @@
                     </div>
                     {% endfor %}
                 </section>
+                <a class="edit" href="{{site.github.repository_url}}/edit/master/docs/_data/timeline.json">
+                    <i class="fa fa-edit wow bounceIn text-default" data-wow-delay=".3s"></i>edit timeline
+                </a>
             </div>
         </div>
     </div>
