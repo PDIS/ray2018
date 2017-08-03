@@ -1,14 +1,21 @@
-# Creative Theme for Jekyll
+# Project - RAY
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+### 一、專案名稱：青年學生體檢政府網站計畫 ( Rescue Action by Youth for .gov, “RAY.gov”)
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+### 二、專案背景：
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
 
-## To use the Creative Theme template in your project
+### 三、專案推動：
+1.    運用見習計畫：透過「大專學生公部門見習計畫」招募青年學生協作，名額15人。但將以未來百人以上之共同協作為模擬工作模式。
+2.    採取遠端協作方式：本院無須提供辦公處所。但設置線上討論及問答區，以營造團體協作氛圍。
+3.    混合實體會議形式：專案工作開始前，以工作坊形式辦理講習；此後每二週辦理一次見面會，仿「黑客松」形式，提供自由討論相互交流環境。
+4.    體檢對象及目標：先以本院所屬各級機關網站為對象，如有餘力再及於其他中央及地方機關網站。檢核要項在於政府網站對不同瀏覽器均可相容，由於Chrome及IE經國發會清查，大多數政府網站均可相容，將以大多數政府網站未檢測，網路社群抱怨頻繁的Safari (Mac系統使用之瀏覽器)相容性為體檢目標。
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+### 四、專案分工：
+1.    教育部青發署：提供大專生公部門見習計畫名額及協助相關事宜。
+2.    國發會(資管處)：初步清查政府網站跨平台相容性，提供政府網站連絡窗口，專案成果納入未來檢核計畫。
+3.    本院人事處：
+4.    本院PDIS小組：規劃整合專案執行、設計體檢流程表單、指定專人與見習生協作、提供問題評估與解法、辦理實體講習交流活動、並配合人事、主計等單位辦理行政事宜。
+> (召集人：唐鳳政務委員。行政組：葉寧、賴致翔、彭筱婷。技術組：許展銘、張庭瑜、戴君翰)
 
+### 五、專案效益：本專案具有多元效益，透過本專案小規模的前導實作，除可以補充國發會「政府網站營運績效檢核計畫」之不足，增進政府網站於不同瀏覽器之可用性；另可實驗政府與民間遠端工作的新合作模式；亦可增進青年學生對政府之瞭解與好感。
