@@ -6,89 +6,17 @@
                 </h2>
                 <hr class="primary">
                 <section class="timeline">
+                    {% for event in site.data.timeline %}
                     <div class="timeline-block">
                         <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
                         </div>
-                        <!-- timeline-bullet -->
                         <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">開放報名</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by 青發署 - 「大專學生公部門見習計畫」</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-08-04</span>
+                            <h2 class="wow flipInX" data-wow-delay="0.3s">{{event.title}}</h2>
+                            <p class="wow flipInX" data-wow-delay="0.3s">{{event.owner}}</p>
+                            <span class="date wow flipInX" data-wow-delay="0.3s">{{event.date}}</span>
                         </div>
-                        <!-- timeline-content -->
                     </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">報名截止</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by 青發署 - 「大專學生公部門見習計畫」</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-08-15</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">初選通過名單公布</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by PDIS 公共數位創新空間小組</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-08-31</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">來面試聊聊天囉</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by PDIS 公共數位創新空間小組</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-09-XX</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">正式錄取名單公佈</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by 青發署 - 「大專學生公部門見習計畫」</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-09-XX</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">計畫正式啟動與講習課程！</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by PDIS 公共數位創新空間小組</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-10-02</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
-                        </div>
-                        <!-- timeline-bullet -->
-                        <div class="timeline-content">
-                            <h2 class="wow flipInX" data-wow-delay="0.3s">計畫成果發表會</h2>
-                            <p class="wow flipInX" data-wow-delay="0.3s">by PDIS 公共數位創新空間小組</p>
-                            <span class="date wow flipInX" data-wow-delay="0.3s">2017-12-XX</span>
-                        </div>
-                        <!-- timeline-content -->
-                    </div>
+                    {% endfor %}
                 </section>
             </div>
         </div>
