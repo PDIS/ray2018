@@ -12,7 +12,7 @@
                 {% for qa in site.data.faq%}
                 <h3 class="section-heading">{{qa.q}}</h3>
                 <p class="text-faded">
-                    {{qa.a}}
+                    {{qa.a|markdownify}}
                 </p>
                 <hr> {% endfor %}
                 <a class="edit" href="{{site.github.repository_url}}/edit/master/docs/_data/faq.json">
