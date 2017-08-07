@@ -25,3 +25,8 @@
 .text-light {
     color: #fff
 }
+
+#faq p a {
+    color: #FFF;
+    text-decoration: underline;
+}
