@@ -30,3 +30,18 @@
     color: #FFF;
     text-decoration: underline;
 }
+
+#faq p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    font-family: "微軟正黑體"
+}
