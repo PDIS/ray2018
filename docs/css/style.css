@@ -31,12 +31,12 @@
     text-decoration: underline;
 }
 
-#faq p {
+#faq p, #services p {
     color: white;
     font-weight: 500;
 }
 
-#faq h3 {
+#faq h3, #services h3 {
     color: rgba(255, 255, 255, 0.7);  
 }
 
