@@ -13,7 +13,8 @@
 
 .edit {
     margin-top: 25px;
-    display: block;
+    /* display: block; */
+    display: none;
     color: rgba(255, 255, 255, 0.4);
 }
 
