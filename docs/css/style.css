@@ -19,8 +19,8 @@
 }
 
 .header-bg {
-    background-color: #333;
-    background-blend-mode: difference;
+    background-color: rgba(51, 51, 51, 0.8);
+    background-blend-mode: overlay;
 }
 
 .text-light {
@@ -32,13 +32,15 @@
     text-decoration: underline;
 }
 
-#faq p, #services p {
+#faq p,
+#services p {
     color: white;
     font-weight: 500;
 }
 
-#faq h3, #services h3 {
-    color: rgba(255, 255, 255, 0.7);  
+#faq h3,
+#services h3 {
+    color: rgba(255, 255, 255, 0.7);
 }
 
 h1,
@@ -49,10 +51,15 @@ h5,
 h6,
 p,
 span {
-    font-family: Noto Sans CJK TC,Source Han Sans TW,Noto Sans T Chinese,Source Han Sans TWHK,Microsoft Jhenghei,"微軟正黑體",Source Han Sans,Source Han Sans HK,Lantinghei TC,Heiti TC,"黑體-繁",Lihei Pro,"儷黑 Pro","Adobe 繁黑體 Std",sans-serif;
+    font-family: Noto Sans CJK TC, Source Han Sans TW, Noto Sans T Chinese, Source Han Sans TWHK, Microsoft Jhenghei, "微軟正黑體", Source Han Sans, Source Han Sans HK, Lantinghei TC, Heiti TC, "黑體-繁", Lihei Pro, "儷黑 Pro", "Adobe 繁黑體 Std", sans-serif;
     font-weight: 300;
 }
 
 #slogan {
     font-weight: 300;
+}
+
+.fa-4x {
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.7);
 }
