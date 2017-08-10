@@ -63,3 +63,9 @@ span {
     font-size: 4em;
     color: rgba(255, 255, 255, 0.7);
 }
+
+audio {
+    width: 100px;
+    display: inline;
+    margin: 20px;
+}
