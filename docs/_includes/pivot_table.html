@@ -310,8 +310,8 @@
     ]
 
     function genChartHTML(data) {
-        data.forEach((plot,index) => {
-            $("#plots").append('<div class="col-sm-6 col-md-4 plot" id="' + plot['部會'] + '"></div>')
+        data.forEach(plot => {
+            $("#plots").append('<div class="col-sm-6 col-md-4 plot" title="完成率 '+plot['解答完成比例']+'%" id="' + plot['部會'] + '"></div>')
 
             $("#" + plot['部會']).append("<h4>" + plot['部會'] + "</h4>")
 
