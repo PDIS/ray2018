@@ -51,18 +51,18 @@
         "title": "第三次實作松",
         "owner": "PDIS 公共數位創新空間小組",
         "date": "2017-11-16",
-        "done": false
+        "done": true
     },
     {
-        "title": "最後一次實作松",
+        "title": "PDIS 內部成果發表會",
         "owner": "PDIS 公共數位創新空間小組",
         "date": "2017-11-30",
         "done": false
     },
     {
-        "title": "專案成果發表",
+        "title": "青年署實習成果發表會",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-11月底",
+        "date": "2017-12-02",
         "done": false
     }
 ]
