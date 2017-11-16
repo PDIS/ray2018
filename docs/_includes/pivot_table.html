@@ -1,0 +1,329 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+<section class="bg-" id="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">各機關完成比例</h2>
+                <hr class="primary">
+                <br>
+                <div id="plots">
+                </div>
+                <style>
+                    .square {
+                        width: 20px;
+                        padding-bottom: 20px;
+                        background-color: #F05F40;
+                        height: 0px;
+                        float: left;
+                        margin: 2px
+                    }
+
+                    .square2 {
+                        width: 20px;
+                        padding-bottom: 20px;
+                        background-color: rgb(255, 187, 0);
+                        height: 0px;
+                        float: left;
+                        margin: 2px
+                    }
+
+                    .square3 {
+                        width: 20px;
+                        padding-bottom: 20px;
+                        background-color: #EEE;
+                        height: 0px;
+                        float: left;
+                        margin: 2px
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+
+    var data = [
+        {
+            "部會": "法務部",
+            "報告網址的COUNTUNIQUE": 24,
+            "網址的COUNTUNIQUE": 100,
+            "檢查完成比例": 24,
+            "測試完成的COUNTA": 14,
+            "解答完成比例": 14
+        },
+        {
+            "部會": "交通部",
+            "報告網址的COUNTUNIQUE": 23,
+            "網址的COUNTUNIQUE": 94,
+            "檢查完成比例": 24,
+            "測試完成的COUNTA": 11,
+            "解答完成比例": 12
+        },
+        {
+            "部會": "國軍退除役官兵輔導委員會",
+            "報告網址的COUNTUNIQUE": 18,
+            "網址的COUNTUNIQUE": 52,
+            "檢查完成比例": 35,
+            "測試完成的COUNTA": 17,
+            "解答完成比例": 33
+        },
+        {
+            "部會": "經濟部",
+            "報告網址的COUNTUNIQUE": 28,
+            "網址的COUNTUNIQUE": 50,
+            "檢查完成比例": 56,
+            "測試完成的COUNTA": 9,
+            "解答完成比例": 18
+        },
+        {
+            "部會": "農業委員會",
+            "報告網址的COUNTUNIQUE": 25,
+            "網址的COUNTUNIQUE": 41,
+            "檢查完成比例": 61,
+            "測試完成的COUNTA": 13,
+            "解答完成比例": 32
+        },
+        {
+            "部會": "財政部",
+            "報告網址的COUNTUNIQUE": 21,
+            "網址的COUNTUNIQUE": 27,
+            "檢查完成比例": 78,
+            "測試完成的COUNTA": 9,
+            "解答完成比例": 33
+        },
+        {
+            "部會": "內政部",
+            "報告網址的COUNTUNIQUE": 23,
+            "網址的COUNTUNIQUE": 26,
+            "檢查完成比例": 88,
+            "測試完成的COUNTA": 11,
+            "解答完成比例": 42
+        },
+        {
+            "部會": "中央選舉委員會",
+            "報告網址的COUNTUNIQUE": 17,
+            "網址的COUNTUNIQUE": 22,
+            "檢查完成比例": 77,
+            "測試完成的COUNTA": 13,
+            "解答完成比例": 59
+        },
+        {
+            "部會": "文化部",
+            "報告網址的COUNTUNIQUE": 17,
+            "網址的COUNTUNIQUE": 20,
+            "檢查完成比例": 85,
+            "測試完成的COUNTA": 8,
+            "解答完成比例": 40
+        },
+        {
+            "部會": "教育部",
+            "報告網址的COUNTUNIQUE": 18,
+            "網址的COUNTUNIQUE": 18,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 14,
+            "解答完成比例": 78
+        },
+        {
+            "部會": "勞動部",
+            "報告網址的COUNTUNIQUE": 9,
+            "網址的COUNTUNIQUE": 10,
+            "檢查完成比例": 90,
+            "測試完成的COUNTA": 7,
+            "解答完成比例": 70
+        },
+        {
+            "部會": "衛生福利部",
+            "報告網址的COUNTUNIQUE": 7,
+            "網址的COUNTUNIQUE": 8,
+            "檢查完成比例": 88,
+            "測試完成的COUNTA": 5,
+            "解答完成比例": 63
+        },
+        {
+            "部會": "國防部",
+            "報告網址的COUNTUNIQUE": 5,
+            "網址的COUNTUNIQUE": 5,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 4,
+            "解答完成比例": 80
+        },
+        {
+            "部會": "金融監督管理委員會",
+            "報告網址的COUNTUNIQUE": 4,
+            "網址的COUNTUNIQUE": 5,
+            "檢查完成比例": 80,
+            "測試完成的COUNTA": 3,
+            "解答完成比例": 60
+        },
+        {
+            "部會": "科技部",
+            "報告網址的COUNTUNIQUE": 4,
+            "網址的COUNTUNIQUE": 4,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 3,
+            "解答完成比例": 75
+        },
+        {
+            "部會": "外交部",
+            "報告網址的COUNTUNIQUE": 2,
+            "網址的COUNTUNIQUE": 3,
+            "檢查完成比例": 67,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 33
+        },
+        {
+            "部會": "中央銀行",
+            "報告網址的COUNTUNIQUE": 3,
+            "網址的COUNTUNIQUE": 3,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 3,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "人事行政總處",
+            "報告網址的COUNTUNIQUE": 3,
+            "網址的COUNTUNIQUE": 3,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 3,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "原住民族委員會",
+            "報告網址的COUNTUNIQUE": 2,
+            "網址的COUNTUNIQUE": 2,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 50
+        },
+        {
+            "部會": "原子能委員會",
+            "報告網址的COUNTUNIQUE": 2,
+            "網址的COUNTUNIQUE": 2,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 2,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "客家委員會",
+            "報告網址的COUNTUNIQUE": 2,
+            "網址的COUNTUNIQUE": 2,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 2,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "環境保護署",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "僑務委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 0,
+            "解答完成比例": 0
+        },
+        {
+            "部會": "國家發展委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 0,
+            "解答完成比例": 0
+        },
+        {
+            "部會": "國家通訊傳播委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "國立故宮博物院",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "海岸巡防署",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "行政院",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 0,
+            "解答完成比例": 0
+        },
+        {
+            "部會": "主計總處",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "公共工程委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        },
+        {
+            "部會": "公平交易委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 0,
+            "解答完成比例": 0
+        },
+        {
+            "部會": "大陸委員會",
+            "報告網址的COUNTUNIQUE": 1,
+            "網址的COUNTUNIQUE": 1,
+            "檢查完成比例": 100,
+            "測試完成的COUNTA": 1,
+            "解答完成比例": 100
+        }
+    ]
+
+    function genChartHTML(data) {
+        data.forEach(plot => {
+            $("#plots").append('<div class="col-sm-6 col-md-4" id="' + plot['部會'] + '"></div>')
+
+            $("#" + plot['部會']).append("<h3>" + plot['部會'] + "</h3>")
+
+            for (i = 0; i < plot['測試完成的COUNTA']; i++) {
+                $("#" + plot['部會']).append("<span class='square'></span>")
+            }
+            for (i = 0; i < plot['報告網址的COUNTUNIQUE'] - plot['測試完成的COUNTA']; i++) {
+                $("#" + plot['部會']).append("<span class='square2'></span>")
+            }
+            for (i = 0; i < plot['網址的COUNTUNIQUE'] - plot['報告網址的COUNTUNIQUE'] - plot['測試完成的COUNTA']; i++) {
+                $("#" + plot['部會']).append("<span class='square3'></span>")
+            }
+            $("#" + plot['部會']).append("<div class='clearfix'></div>")
+
+        })
+
+    }
+
+    genChartHTML(data);
+
+</script>

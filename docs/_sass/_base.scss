@@ -205,6 +205,12 @@ header {
     }
 }
 
+.header-bg-min {
+    @media (min-width: 768px) {
+        min-height: 450px;
+    }
+}
+
 // Sections
 
 .section-heading {
