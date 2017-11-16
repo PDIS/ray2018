@@ -7,7 +7,7 @@
                 <section class="timeline">
                     {% for event in site.data.timeline %}
                     <div class="timeline-block">
-                        <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+                        <div class="timeline-bullet wow zoomIn {% if event.done %}timeline-done{% endif %}" data-wow-delay="0s">
                         </div>
                         <div class="timeline-content">
                             <h2 class="wow flipInX" data-wow-delay="0.3s">{{event.title}}</h2>

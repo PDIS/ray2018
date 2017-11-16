@@ -10,6 +10,10 @@
     text-align: left;
 }
 
+.timeline-done{
+    background-color: #d94e3a !important
+}
+
 .timeline::before {
     /* this is the vertical line */
     content: '';
