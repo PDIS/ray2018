@@ -12,8 +12,8 @@
                 </div>
                 <style>
                     .square {
-                        width: 20px;
-                        padding-bottom: 20px;
+                        width: 16px;
+                        padding-bottom: 16px;
                         background-color: #F05F40;
                         height: 0px;
                         float: left;
@@ -21,8 +21,8 @@
                     }
 
                     .square2 {
-                        width: 20px;
-                        padding-bottom: 20px;
+                        width: 16px;
+                        padding-bottom: 16px;
                         background-color: rgb(255, 187, 0);
                         height: 0px;
                         float: left;
@@ -30,13 +30,19 @@
                     }
 
                     .square3 {
-                        width: 20px;
-                        padding-bottom: 20px;
+                        width: 16px;
+                        padding-bottom: 16px;
                         background-color: #EEE;
                         height: 0px;
                         float: left;
                         margin: 2px
                     }
+
+                    .plot{
+                        margin:10px 0;
+                        min-height:200px
+                    }
+
                 </style>
             </div>
         </div>
@@ -304,10 +310,10 @@
     ]
 
     function genChartHTML(data) {
-        data.forEach(plot => {
-            $("#plots").append('<div class="col-sm-6 col-md-4" id="' + plot['部會'] + '"></div>')
+        data.forEach((plot,index) => {
+            $("#plots").append('<div class="col-sm-6 col-md-4 plot" id="' + plot['部會'] + '"></div>')
 
-            $("#" + plot['部會']).append("<h3>" + plot['部會'] + "</h3>")
+            $("#" + plot['部會']).append("<h4>" + plot['部會'] + "</h4>")
 
             for (i = 0; i < plot['測試完成的COUNTA']; i++) {
                 $("#" + plot['部會']).append("<span class='square'></span>")
@@ -315,7 +321,7 @@
             for (i = 0; i < plot['報告網址的COUNTUNIQUE'] - plot['測試完成的COUNTA']; i++) {
                 $("#" + plot['部會']).append("<span class='square2'></span>")
             }
-            for (i = 0; i < plot['網址的COUNTUNIQUE'] - plot['報告網址的COUNTUNIQUE'] - plot['測試完成的COUNTA']; i++) {
+            for (i = 0; i < plot['網址的COUNTUNIQUE'] - plot['報告網址的COUNTUNIQUE']; i++) {
                 $("#" + plot['部會']).append("<span class='square3'></span>")
             }
             $("#" + plot['部會']).append("<div class='clearfix'></div>")
