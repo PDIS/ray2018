@@ -121,6 +121,8 @@
         "法務部": 353
     };
 
+    var aaa;
+
     function genChartHTML(data) {
 
         checked = 0;
@@ -167,11 +169,13 @@
 
     function csvJSON(csv) {
 
-        var lines = csv.split("\n");
+        var lines = csv.split("\r\n");
 
         var result = [];
 
         var headers = lines[0].split(",");
+
+        console.log(headers)
 
         for (var i = 1; i < lines.length; i++) {
 
