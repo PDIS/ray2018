@@ -206,8 +206,20 @@ header {
 }
 
 .header-bg-min {
+
+    background-color: rgba(51, 51, 51, 0.8);
+    background-blend-mode: overlay;
+
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/header_min.jpg');
+    text-align: center;
+    color: white;
     @media (min-width: 768px) {
-        min-height: 450px;
+        min-height: 100%;
         background-color: rgba(51, 51, 51, 0.8);
         background-blend-mode: overlay;
         background-image: url(../img/header_min.jpg);
