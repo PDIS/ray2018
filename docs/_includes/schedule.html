@@ -10,11 +10,13 @@
                         <div class="timeline-bullet wow zoomIn {% if event.done %}timeline-done{% endif %}" data-wow-delay="0s">
                         </div>
                         <div class="timeline-content">
-                            
+
                             <h2 class="wow flipInX" data-wow-delay="0.3s">
-                                {{event.title}}
-                                {% if event.video!=null %}
-                                    <a href="{{event.video}}" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i></a> 
+                                {{event.title}} {% if event.video!=null %}
+                                <a href="{{event.video}}" target="_blank">
+                                    <!-- <i style="position: absolute;" class="fa fa-video-camera" aria-hidden="true"></i> -->
+                                        <img src="{{event.videoimg}}" />
+                                </a>
                                 {% endif %}
                             </h2>
                             <p class="wow flipInX" data-wow-delay="0.3s">{{event.owner}}</p>
