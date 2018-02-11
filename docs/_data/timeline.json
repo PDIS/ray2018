@@ -2,67 +2,73 @@
     {
         "title": "開放報名",
         "owner": "青發署 - 「大專學生公部門見習計畫」",
-        "date": "2017-08-07",
-        "done": true
+        "date": "2018-02",
+        "done": false
     },
     {
-        "title": "報名截止，選出30人進入面試",
+        "title": "報名截止，選出 60 人進入面試",
         "owner": "青發署 - 「大專學生公部門見習計畫」",
-        "date": "2017-08-15",
-        "done": true
+        "date": "2018-02",
+        "done": false
     },
     {
         "title": "寄送面試通知",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-08-18",
-        "done": true
+        "date": "2018-03",
+        "done": false
     },
     {
         "title": "來面試聊聊天",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-08",
-        "done": true
+        "date": "2018-03",
+        "done": false
     },
     {
-        "title": "15人錄取名單公佈",
+        "title": "30 人錄取名單公佈",
         "owner": "青發署 - 「大專學生公部門見習計畫」",
-        "date": "2017-09-01",
-        "done": true
+        "date": "2018-03",
+        "done": false
     },
     {
         "title": "見習生報到和專案工作說明",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-10-02",
-        "done": true,
+        "date": "2018-04-02",
+        "done": false
+    },
+    {
+        "title": "講習工作坊",
+        "owner": "PDIS 公共數位創新空間小組",
+        "date": "2018-04-09/10",
+        "done": false
     },
     {
         "title": "第一次實作松",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-10-19",
-        "done": true,
+        "date": "2018-04-23",
+        "done": false
     },
     {
         "title": "第二次實作松",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-11-07",
-        "done": true
-    },
-    {
-        "title": "第三次實作松",
-        "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-11-16",
-        "done": true
+        "date": "2018-05-14",
+        "done": false
     },
     {
         "title": "PDIS 內部成果發表會",
         "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-11-30",
+        "date": "2018-05-31",
         "done": false
     },
     {
         "title": "青年署實習成果發表會",
-        "owner": "PDIS 公共數位創新空間小組",
-        "date": "2017-12-02",
+        "owner": "青發署 - 「大專學生公部門見習計畫」",
+        "date": "2018-06",
+        "done": false
+    },
+    {
+        "title": "政府行動版網站常見問題分享",
+        "owner": "國發會 - 「政府網站製作培訓班」",
+        "date": "2018-06",
         "done": false
     }
 ]
